@@ -5,7 +5,7 @@ class Main {
 
         MyStack stack = new MyStack(10);
         stack.push(55);
-        stack.push(70);
+        System.out.println("Value was added : "+ stack.push(70));
         System.out.println("Value taken from stack :  "+ stack.pop());
         stack.printStack();
         stack.push(15);

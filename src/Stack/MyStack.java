@@ -10,7 +10,7 @@ class MyStack {
         this.stockArray = new int[arraySize];
     }
 
-    boolean push(int value) {
+    public boolean push(int value) {
         if (head >= (arrayMaxSize - 1)) {
             System.out.println("does not add value : " + value + " to the stack because stack is overflow");
             return false;
@@ -21,7 +21,7 @@ class MyStack {
         }
     }
 
-    int pop() {
+    public int pop() {
         if (head < 0) {
             throw new IllegalStateException("stack is empty");
         } else {
@@ -42,7 +42,7 @@ class MyStack {
         return stockArray[0];
     }
 
-    void printStack() {
+    public void printStack() {
         System.out.print("Print contents of the stack : ");
         for (int i = head; i > -1; i--) {
             System.out.print(stockArray[i] + " , ");
